@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="25dp"
+    android:layout_margin="13dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:id="@+id/subnameatt"
+        android:text="mp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/staticatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subnameatt"
+        android:text="Attendance:"
+        android:layout_alignStart="@+id/subnameatt"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/subnameatt"
+        android:id="@+id/attendanceatt"
+        android:textColor="#FF9E80"
+        android:text="10/15"
+        android:layout_alignBottom="@+id/staticatt"
+        android:layout_toEndOf="@+id/staticatt"
+        android:padding="5dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/subnameatt"
+        android:layout_toEndOf="@+id/attendanceatt"
+        tools:ignore="UnknownId">
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/progressatt"
+        />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#00000000"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="69%"
+            android:id="@+id/progresstextatt"
+            android:layout_alignTop="@+id/progressatt"
+            android:layout_alignRight="@+id/progressatt"
+            android:paddingTop="13dp"
+            android:paddingRight="5dp"
+
+
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

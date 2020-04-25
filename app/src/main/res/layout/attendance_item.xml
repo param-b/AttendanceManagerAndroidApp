@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/subnameatt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="mp"
+                android:textColor="#000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/staticatt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subnameatt"
+                android:layout_alignStart="@+id/subnameatt"
+                android:padding="5dp"
+                android:text="Attendance:"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/attendanceatt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subnameatt"
+                android:layout_alignBottom="@+id/staticatt"
+                android:layout_toEndOf="@+id/staticatt"
+                android:padding="5dp"
+                android:text="10/15"
+                android:textColor="#FF9E80"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/presentatt"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/attendanceatt"
+                android:layout_toLeftOf="@+id/nolecatt"
+                android:background="@drawable/roundbutton"
+                android:padding="10dp"
+                android:src="@drawable/ic_thumb_up_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/nolecatt"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/attendanceatt"
+                android:layout_toLeftOf="@+id/absentatt"
+                android:background="@drawable/roundbutton"
+                android:src="@drawable/ic_do_not_disturb_on_black_24dp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/absentatt"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/attendanceatt"
+                android:background="@drawable/roundbutton"
+                android:padding="10dp"
+                android:src="@drawable/ic_thumb_down_black_24dp"
+                android:layout_alignParentRight="true"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/subnameatt"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressatt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    style="?android:progressBarStyleHorizontal"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/custom_progress"
+                    />
+
+                <TextView
+                    android:id="@+id/progresstextatt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/progressatt"
+                    android:layout_alignRight="@+id/progressatt"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:paddingTop="13dp"
+                    android:paddingRight="14dp"
+                    android:text="69%"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+
+
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

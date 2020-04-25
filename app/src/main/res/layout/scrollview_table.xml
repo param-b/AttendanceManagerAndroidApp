@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorPrimary">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <!-- Add CalenderView to display the Calender -->
+                <CalendarView
+                    android:id="@+id/calender"
+                    android:layout_width="401dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:weekDayTextAppearance="@style/CalenderViewDateCustomText"
+                    android:dateTextAppearance="@style/CalenderViewDateCustomText"
+                    android:minDate="01/01/2020"
+                    android:theme="@style/CalenderViewCustom"
+                    android:background="@drawable/background"
+                    />
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="30dp"
+                    >
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:background="#107505"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":Present"
+                        android:paddingRight="15dp"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:background="#F80227"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":Absent"
+                        android:paddingRight="15dp"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="15dp"
+                        android:background="#FFFF8D"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":No Lecture"
+                        android:paddingRight="15dp"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <ListView
+                    android:id="@+id/present_list"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="#107505"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <ListView
+                    android:id="@+id/no_lecture_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF8D"
+                    android:padding="5dp" />
+            </TableRow>
+            <TableRow>
+
+                <ListView
+                    android:id="@+id/absent_list"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="#F80227"
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
+
+

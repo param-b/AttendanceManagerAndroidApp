@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <ImageView
+        android:id="@+id/logo_display"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="75dp"
+        app:srcCompat="@drawable/am"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="75dp"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_alignStart="@+id/username"
+        android:layout_alignLeft="@+id/username" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/roundbutton"
+        android:layout_below="@+id/password"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+
+        />
+</RelativeLayout>
